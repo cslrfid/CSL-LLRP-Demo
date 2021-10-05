@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<ADD_ROSPEC
+   xmlns="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:llrp="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0 http://www.llrp.org/ltk/schema/core/encoding/xml/1.0/llrp.xsd" 
+ MessageID="0">
+ <ROSpec>
+     <ROSpecID>1111</ROSpecID>
+     <Priority>0</Priority>
+     <CurrentState>Disabled</CurrentState>
+     <ROBoundarySpec>
+         <ROSpecStartTrigger>
+             <ROSpecStartTriggerType>Null</ROSpecStartTriggerType>
+         </ROSpecStartTrigger>
+         <ROSpecStopTrigger>
+             <ROSpecStopTriggerType>Null</ROSpecStopTriggerType>
+             <DurationTriggerValue>0</DurationTriggerValue>
+         </ROSpecStopTrigger>
+     </ROBoundarySpec>
+     <AISpec>
+         <AntennaIDs>0</AntennaIDs>
+         <AISpecStopTrigger>
+             <AISpecStopTriggerType>Null</AISpecStopTriggerType>
+             <DurationTrigger>0</DurationTrigger>
+         </AISpecStopTrigger>
+         <InventoryParameterSpec>
+             <InventoryParameterSpecID>1234</InventoryParameterSpecID>
+             <ProtocolID>EPCGlobalClass1Gen2</ProtocolID>
+			 <AntennaConfiguration>
+				 <!-- support ID = 0 only -->
+				 <AntennaID>0</AntennaID>
+				 <C1G2InventoryCommand>
+					 <TagInventoryStateAware>false</TagInventoryStateAware>
+					 <C1G2Filter>
+						 <!-- must set Do_Not_Truncate-->
+						 <T>Do_Not_Truncate</T>
+						 <C1G2TagInventoryMask>
+							 <!-- EPC bank -->
+							 <MB>1</MB>
+							 <!-- set pointer to 32 to skip PC -->
+							 <Pointer>32</Pointer>
+							 <!-- set EPC prefix to filter -->
+							 <!--<TagMask Count="8">AA</TagMask>-->
+							 <TagMask Count="0"></TagMask>
+						 </C1G2TagInventoryMask>
+						 <C1G2TagInventoryStateUnawareFilterAction>
+							 <Action>Select_Unselect</Action>
+						 </C1G2TagInventoryStateUnawareFilterAction>
+					 </C1G2Filter>
+				 </C1G2InventoryCommand>
+			 </AntennaConfiguration>
+         </InventoryParameterSpec>
+     </AISpec>
+ </ROSpec>
+</ADD_ROSPEC>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CUSTOM_MESSAGE
+   xmlns="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:llrp="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0" 
+ MessageID="0">
+	<!-- Vendor Identifier must be 51654-->
+	<VendorIdentifier>51654</VendorIdentifier>
+	<!-- Message type 101 is to set inventory mode-->
+	<MessageSubtype>101</MessageSubtype>
+	<!-- Format: Mode: 0 = Toggle AB (default); 1 = Target A; 2 = Target B (Hex #, 1 bytes)| inventory algorithm: 0 = fixed Q; 1 = Dynamic Q (default) (Hex #, 1 bytes)  -->
+	<!-- Example: Toggle AB and Dynamic Q-->
+	<Data>0001</Data>
+</CUSTOM_MESSAGE>

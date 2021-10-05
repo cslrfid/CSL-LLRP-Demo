@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ADD_ACCESSSPEC
+   xmlns="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:llrp="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0 http://www.llrp.org/ltk/schema/core/encoding/xml/1.0/llrp.xsd" 
+ MessageID="0">
+    <AccessSpec>
+        <AccessSpecID>23</AccessSpecID>
+        <AntennaID>0</AntennaID>
+        <!-- 0 means to work on all antennas -->
+        <ProtocolID>EPCGlobalClass1Gen2</ProtocolID>
+        <CurrentState>Disabled</CurrentState>
+        <ROSpecID>0</ROSpecID>
+        <!--0 means to work with any RO Spec -->
+        <AccessSpecStopTrigger>
+            <AccessSpecStopTrigger>Null</AccessSpecStopTrigger>
+            <OperationCountValue>0</OperationCountValue>
+            <!--OperationCountValue is ignored since we are not using the trigger -->
+        </AccessSpecStopTrigger>
+        <AccessCommand>
+            <C1G2TagSpec>
+                <C1G2TargetTag>
+                    <MB>1</MB>
+                    <Match>true</Match>
+					<!-- set pointer to 32 to skip PC -->
+                    <Pointer>32</Pointer>
+                    <!-- select EPC prefix of E200 -->
+					<!-- the mask will be ignored -->
+                    <TagMask></TagMask>
+                    <TagData>E200</TagData>
+                </C1G2TargetTag>
+            </C1G2TagSpec>
+            <!--read the first 4 words of user memory-->
+            <C1G2Read>
+                <OpSpecID>1</OpSpecID>
+                <AccessPassword>0</AccessPassword>
+                <MB>3</MB>
+                <WordPointer>0</WordPointer>
+                <WordCount>4</WordCount>
+            </C1G2Read>
+        </AccessCommand>
+    </AccessSpec>
+</ADD_ACCESSSPEC>
