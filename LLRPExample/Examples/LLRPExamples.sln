@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadExample", "ReadExample\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteExample", "WriteExample\WriteExample.csproj", "{8D4FAFBC-EC16-4784-A0C2-96FD8925B429}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvExampleCS468XJ", "InvExampleCS468XJ\InvExampleCS468XJ.csproj", "{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,18 @@ Global
 		{8D4FAFBC-EC16-4784-A0C2-96FD8925B429}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{8D4FAFBC-EC16-4784-A0C2-96FD8925B429}.Release|Win32.ActiveCfg = Release|Any CPU
 		{8D4FAFBC-EC16-4784-A0C2-96FD8925B429}.Release|Win32.Build.0 = Release|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Debug|Win32.Build.0 = Debug|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Release|Win32.ActiveCfg = Release|Any CPU
+		{42E1EC1A-1E81-4C3E-A2E8-5AFD7036C915}.Release|Win32.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

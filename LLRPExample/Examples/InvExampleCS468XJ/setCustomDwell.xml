@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CUSTOM_MESSAGE
+   xmlns="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:llrp="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0" 
+ MessageID="0">
+	<!-- Vendor Identifier must be 51654-->
+	<VendorIdentifier>51654</VendorIdentifier>
+	<!-- Message type 100 is to set antenna dwell time-->
+	<MessageSubtype>100</MessageSubtype>
+	<!-- Format: dwell time for port 1 (Hex #, 2 bytes)|dwell time for port 2 (Hex #, 2 bytes)|dwell time for port 3 (Hex #, 2 bytes)|dwell time for port 4 (Hex #, 2 bytes)...to port 16  -->
+	<!-- Example to apply to individual port. Port 1 = 1000ms (Hex # is 03E8); Port 2 = 1000ms(Hex # is 03E8); Port 3 = 1000ms(Hex # is 03E8); Port 4 = 1000ms(Hex # is 03E8)...to port 16;-->
+	<Data>03E803E803E803E803E803E803E803E803E803E803E803E803E803E803E803E8</Data>
+</CUSTOM_MESSAGE>
